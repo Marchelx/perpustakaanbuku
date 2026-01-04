@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil | Aplikasi Perpustakaan</title>
+
+  <!-- WAJIB RESPONSIF -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<!-- HEADER -->
+<header class="bg-primary text-white p-3 mb-3">
+  <div class="container d-flex align-items-center">
+    <img src="img/unpam.png" width="40" class="me-3">
+    <h5 class="mb-0">Profil</h5>
+  </div>
+</header>
+
+<!-- NAVBAR RESPONSIF -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container">
+    <a class="navbar-brand d-lg-none" href="#">Menu</a>
+
+    <!-- HAMBURGER -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="beranda.html">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="transaksi.html">Transaksi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="profil.html">Profil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- KONTEN PROFIL -->
+<div class="container">
+
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6">
+
+      <div class="card shadow-sm">
+        <div class="card-body text-center">
+
+          <!-- FOTO -->
+          <img src="img/profil.jpg"
+               class="rounded-circle mb-3"
+               width="130" height="130"
+               style="object-fit: cover;">
+
+          <h5 class="fw-bold">Marchel Ardhiansyah</h5>
+          <p class="text-muted mb-4">Pembuat Aplikasi Perpustakaan</p>
+
+          <!-- DATA PROFIL -->
+          <table class="table table-borderless text-start">
+            <tr>
+              <th width="40%">NIM</th>
+              <td>251011700702</td>
+            </tr>
+            <tr>
+              <th>Program Studi</th>
+              <td>Sistem Informasi</td>
+            </tr>
+            <tr>
+              <th>Mata Kuliah</th>
+              <td>Praktikum Web 1</td>
+            </tr>
+            <tr>
+              <th>Teknologi</th>
+              <td>HTML, Bootstrap, JavaScript</td>
+            </tr>
+            <tr>
+              <th>Aplikasi</th>
+              <td>Perpustakaan</td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<!-- FOOTER -->
+<footer class="bg-dark text-white mt-5">
+  <div class="container py-3">
+    <div class="row text-center text-md-start align-items-center">
+
+      <div class="col-12 col-md-6 mb-2 mb-md-0">
+        <small>
+          © 2026 Aplikasi Perpustakaan <br>
+          Praktikum Web 1
+        </small>
+      </div>
+
+      <div class="col-12 col-md-6 text-md-end">
+        <small>
+          Dibuat oleh: <strong>Marchel Ardhiansyah</strong><br>
+          NIM: 251011700702
+        </small>
+      </div>
+
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

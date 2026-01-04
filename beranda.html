@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Beranda | Aplikasi Perpustakaan</title>
+
+  <!-- WAJIB RESPONSIF -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<!-- HEADER -->
+<header class="bg-primary text-white p-3 mb-3">
+  <div class="container d-flex align-items-center">
+    <img src="img/unpam.png" width="40" class="me-3">
+    <h5 class="mb-0">Aplikasi Perpustakaan</h5>
+  </div>
+</header>
+
+<!-- NAVBAR RESPONSIF -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container">
+    <a class="navbar-brand d-lg-none" href="#">Menu</a>
+
+    <!-- TOMBOL HAMBURGER -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="beranda.html">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="transaksi.html">Transaksi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profil.html">Profil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- KONTEN -->
+<div class="container">
+
+  <!-- DESKRIPSI -->
+  <section class="mb-4">
+    <h4>Selamat Datang</h4>
+    <p>
+      Aplikasi Perpustakaan ini digunakan untuk melihat informasi buku
+      dan melakukan transaksi peminjaman buku secara sederhana.
+    </p>
+  </section>
+
+  <!-- DAFTAR BUKU -->
+  <section>
+    <h5 class="mb-3">📚 Koleksi Buku Perpustakaan</h5>
+
+    <div class="row">
+
+      <!-- BUKU 1 -->
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title">Pemrograman Web 1</h6>
+            <p class="card-text">
+              Membahas dasar pembuatan website menggunakan HTML,
+              CSS, dan JavaScript.
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Pengarang: Samso Supriyatna</li>
+              <li class="list-group-item">Tahun: 2026</li>
+              <li class="list-group-item">
+                Status: <span class="badge bg-success">Tersedia</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- BUKU 2 -->
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title">Basis Data</h6>
+            <p class="card-text">
+              Buku ini membahas konsep basis data, perancangan,
+              dan pengelolaan database.
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Pengarang: Ari Putra</li>
+              <li class="list-group-item">Tahun: 2026</li>
+              <li class="list-group-item">
+                Status: <span class="badge bg-success">Tersedia</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- BUKU 3 -->
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title">Konsep Sistem Informasi</h6>
+            <p class="card-text">
+              Membahas konsep sistem informasi dan penerapannya
+              dalam organisasi.
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Pengarang: Fahrul Roji</li>
+              <li class="list-group-item">Tahun: 2026</li>
+              <li class="list-group-item">
+                Status: <span class="badge bg-success">Tersedia</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+<!-- FOOTER -->
+<footer class="bg-dark text-white mt-5">
+  <div class="container py-3">
+    <div class="row text-center text-md-start align-items-center">
+
+      <div class="col-12 col-md-6 mb-2 mb-md-0">
+        <small>
+          © 2026 Aplikasi Perpustakaan <br>
+          Praktikum Web 1
+        </small>
+      </div>
+      <div class="col-12 col-md-6 text-md-end">
+        <small>
+          Dibuat oleh: <strong>Marchel Ardhiansyah</strong><br>
+          NIM: 251011700702
+        </small>
+      </div>
+
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

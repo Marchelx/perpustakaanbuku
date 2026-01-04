@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Transaksi | Aplikasi Perpustakaan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<!-- HEADER -->
+<header class="bg-primary text-white p-3 mb-3">
+  <div class="container d-flex align-items-center">
+    <img src="img/unpam.png" width="45" class="me-3">
+    <h4 class="mb-0">Transaksi Peminjaman</h4>
+  </div>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container">
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="beranda.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link active" href="transaksi.html">Transaksi</a></li>
+        <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- DAFTAR BUKU -->
+  <div class="card shadow-sm mb-4">
+    <div class="card-header bg-primary text-white">
+      <h5 class="mb-0">📚 Daftar Buku</h5>
+    </div>
+    <div class="card-body table-responsive">
+      <table class="table table-bordered table-striped mb-0">
+        <thead class="table-light">
+          <tr>
+            <th>No</th>
+            <th>Judul</th>
+            <th>Pengarang</th>
+            <th>Tahun</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="tabelBuku"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- FORM PEMINJAMAN -->
+  <div class="card shadow-sm mb-4">
+    <div class="card-header bg-success text-white">
+      <h5 class="mb-0">📝 Form Peminjaman</h5>
+    </div>
+    <div class="card-body">
+      <form id="formTransaksi" class="row g-3">
+        <div class="col-12 col-md-6">
+          <label class="form-label">Nama Peminjam</label>
+          <input type="text" id="nama" class="form-control">
+        </div>
+        <div class="col-12 col-md-6">
+          <label class="form-label">Judul Buku</label>
+          <select id="buku" class="form-control"></select>
+        </div>
+        <div class="col-12 col-md-4">
+          <label class="form-label">Jumlah</label>
+          <input type="number" id="jumlah" class="form-control">
+        </div>
+        <div class="col-12 col-md-4">
+          <label class="form-label">Tanggal Pinjam</label>
+          <input type="date" id="tanggal" class="form-control">
+        </div>
+        <div class="col-12 col-md-4 d-flex align-items-end">
+          <button class="btn btn-success w-100">Simpan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- TABEL TRANSAKSI -->
+  <div class="card shadow-sm mb-4">
+    <div class="card-header bg-dark text-white">
+      <h5 class="mb-0">📄 Data Transaksi</h5>
+    </div>
+    <div class="card-body table-responsive">
+      <table class="table table-bordered mb-0">
+        <thead class="table-light">
+          <tr>
+            <th>Nama</th>
+            <th>Buku</th>
+            <th>Jumlah</th>
+            <th>Tanggal</th>
+          </tr>
+        </thead>
+        <tbody id="dataTransaksi"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- FORM PENGEMBALIAN -->
+  <div class="card shadow-sm mb-5">
+    <div class="card-header bg-warning">
+      <h5 class="mb-0">🔄 Form Pengembalian</h5>
+    </div>
+    <div class="card-body">
+      <form id="formPengembalian" class="row g-3">
+        <div class="col-12 col-md-6">
+          <label class="form-label">Judul Buku</label>
+          <select id="bukuKembali" class="form-control"></select>
+        </div>
+        <div class="col-12 col-md-6">
+          <label class="form-label">Tanggal Kembali</label>
+          <input type="date" id="tanggalKembali" class="form-control">
+        </div>
+        <div class="col-12 col-md-4 d-flex align-items-end">
+          <button class="btn btn-warning w-100">Kembalikan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white">
+  <div class="container py-3 text-center text-md-start">
+    <div class="row">
+      <div class="col-md-6">© 2026 Aplikasi Perpustakaan</div>
+      <div class="col-md-6 text-md-end">
+        Marchel Ardhiansyah | 251011700702
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/transaksi.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
